@@ -120,3 +120,55 @@ int main(){
 	}
 	cout << min1 + cons << " " << max1 + c << endl;
 } 
+
+// Update the code after the contest
+#include <bits/stdc++.h>
+#include <cctype>
+#define rep(i, j, k) for (int i = j; i <= k; ++ i)
+using namespace std;
+/*
+	xdy, dy, n, + , -
+	4d5+3d2+2+3-1
+*/
+string a;
+int t1, t2;
+void actnum(int &i){
+	t1 = 0, t2 = 0;
+	int j = i, cnt = 0;
+	while (isdigit(a[i])) cnt ++, i ++;
+	t1 = atoi(a.substr(j, cnt).c_str());
+	if (a[i] != 'd') return;
+	i ++, j = i, cnt = 0;
+	while (isdigit(a[i])) cnt ++, i ++;
+	t2 = atoi(a.substr(j, cnt).c_str());
+}
+int main(){
+	int max1 = 0, min1 = 0, cons = 0, ans[7];
+	rep (i, 1, 6) ans[i] = 0;
+	cin >> a;
+	bool flag = false;
+	for (int i = 0; i < a.size(); ++ i) {
+		int k = 1;
+		if (!flag) actnum(i), flag = true;
+		else if (a[i] == '+'){
+			actnum(++i);
+		}else if(a[i] == '-'){
+			actnum(++i), k = -1;
+		}
+		if (t2 == 0){
+			cons += t1 * k;
+			max1 += cons, min1 += cons;
+		}
+		else{
+			if (t1 == 0) t1 = 1;
+			max1 += t1 * t2, min1 += t1;
+			ans[t2] += t1;
+		}
+		i--;
+	}
+	rep (i, 1, 6){
+		if (!ans[i]) continue;
+		cout << i << " " << ans[i] << endl;
+	}
+	cout << min1 << " " << max1;
+}
