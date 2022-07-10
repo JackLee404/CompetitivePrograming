@@ -143,7 +143,7 @@ void actnum(int &i){
 	t2 = atoi(a.substr(j, cnt).c_str());
 }
 int main(){
-	int max1 = 0, min1 = 0, cons = 0, ans[7];
+	int max1 = 0, min1 = 0, cons = 0, ans[10010];
 	rep (i, 1, 6) ans[i] = 0;
 	cin >> a;
 	bool flag = false;
@@ -166,7 +166,7 @@ int main(){
 		}
 		i--;
 	}
-	rep (i, 1, 6){
+	rep (i, 1, 1000){
 		if (!ans[i]) continue;
 		cout << i << " " << ans[i] << endl;
 	}
