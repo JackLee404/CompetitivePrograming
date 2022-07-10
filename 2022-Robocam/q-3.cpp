@@ -1,6 +1,7 @@
 /*
-  Feeling sad about this contest, and know that my weakness that is "simulation", this contest doesn't have any graph about the most shortest road,
+  	Feeling sad about this contest, and know that my weakness that is "simulation", this contest doesn't have any graph about the most shortest road,
   and they giva a binary graph about tree;
+  	All in all, The code is very foolish;
 */
 #include <bits/stdc++.h>
 #include <cctype>
