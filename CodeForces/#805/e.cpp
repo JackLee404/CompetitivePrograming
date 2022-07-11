@@ -48,3 +48,9 @@ int main(){
 		else puts("Yes");
 	}
 }
+
+
+/*
+	Problem E: After debuggin time, I found my fault in "No" rather than "NO"
+	https://codeforces.com/contest/1702/problem/E
+*/
