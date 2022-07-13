@@ -22,3 +22,11 @@ int main(){
 	}
 	
 }
+
+/*
+	arry which is shape of python
+	 10 11 12  1
+	  9 16 13  2
+	  8 15 14  3
+	  7  6  5  4
+*/
