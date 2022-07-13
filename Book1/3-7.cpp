@@ -25,3 +25,17 @@ int main(){
 		else puts(msg[1]);
 	}
 }
+
+// The Author have a neat way to solve four if else distribution, and is very well program!
+
+int main(){
+	char ch[30];
+	while (scanf("%s", ch) == 1){
+		int m = 1, p = 1;
+		for (int i = 0, j = strlen(ch) - 1; i < j; i ++, j --){
+			if (ch[i] != ch[j]) p = 0;
+			if (r(ch[j]) != ch[i]) m = 0;
+		}
+		puts(msg[2 * m + p]);
+	}
+}
