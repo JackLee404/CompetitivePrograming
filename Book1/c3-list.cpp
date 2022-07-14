@@ -100,3 +100,61 @@ int main(){
 
 	}
 }
+
+// 3-7
+#include <iostream>
+#include <cctype>
+#include <cstring>
+using namespace std;
+
+const int maxn = 1010;
+int m, n, cnt[4][maxn];	
+bool cmp(char* a, char* b){
+	for (int i = 0; i < n; i ++){
+		if (a[i] != b[i]) return a[i] < b[i];
+	}
+	return false;
+}
+int cal(char* a, char* b){
+	int tot = 0;
+	for (int i = 0; i < n; i ++){
+		if (a[i] != b[i]) tot ++;
+	}
+	return tot;
+}
+
+int main(){
+	char ch[500], ans[maxn];
+	int T;
+	cin >> T;
+	while (T --){
+		int ansn = 0;
+		cin >> m >> n;
+		for (int i = 0; i < m; i ++){
+			scanf("%s", ch);
+			for (int j = 0; j < n; j ++){
+				if (ch[j] == 'A') cnt[0][j] ++;
+				else if (ch[j] == 'C') cnt[1][j] ++;
+				else if (ch[j] == 'G') cnt[2][j] ++;
+				else cnt[3][j] ++;  
+			}
+		}
+		for (int i = 0; i < n; i ++){
+			int maxn = 0;
+			for (int j = 0; j < 4; j ++){
+				if (cnt[j][i] > cnt[maxn][i]) maxn = j;
+			}
+			if (maxn == 0) ans[i] = 'A';
+			else if (maxn == 1) ans[i] = 'C';
+			else if(maxn == 2) ans[i] = 'G';
+			else if (maxn == 3) ans[i] = 'T';
+
+			for (int j = 0; j < 4; j ++){
+				if (j != maxn) ansn += cnt[j][i];
+			}
+		}	
+		ans[n] = '\0';
+		puts(ans);
+		printf("%d\n", ansn);
+	}
+}
