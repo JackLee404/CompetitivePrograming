@@ -158,3 +158,60 @@ int main(){
 		printf("%d\n", ansn);
 	}
 }
+//3-8
+#include <iostream>
+#include <cctype>
+#include <cstring>
+#include <vector>
+using namespace std;
+const int maxn = 1e5 + 10;
+
+bool a[30010];
+int b[30010];
+int main(){
+	vector<int> res;
+	int n, m, md;
+	while (cin >> n >> m){
+		int tn = n, tm = m;
+		bool flag = false;
+		memset(a, 0, sizeof(a));
+		memset(b, 0, sizeof(b));
+		int cnt = 0;
+		res.clear();
+		int last;
+		for (int i = 0;; i++){
+			md = n % m;
+			last = i;
+			if (a[md] || md == 0) break;
+			a[md] = 1;
+			b[md] = i + 1;
+			res.push_back(n / m);
+			n = md * 10;
+		}
+		printf("%d/%d = ", tn, tm);
+		if (res.size() - b[md] > 50) flag = true;
+		if (!md){
+			res.push_back(n / m);
+			for (int i = 0; i < res.size(); i ++){
+				printf("%d", res[i]);
+				if (i == 0) printf(".");
+			}
+			printf("(0)\n");
+			cnt = 1;
+		}
+		else{
+			cnt = last - b[md] + 1;
+			for (int i = 0; i < res.size(); i ++){
+				if (i == b[md]) printf("(");
+				if (i > 50){
+					break;
+				}
+				printf("%d", res[i]);
+				if (i == 0) printf(".");
+			}
+			if (flag)	printf("...");	
+			printf(")\n");
+		}
+		printf("   %d = number of digits in repeating cycle\n\n", cnt);
+	}
+}
