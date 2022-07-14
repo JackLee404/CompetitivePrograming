@@ -26,7 +26,7 @@ int main(){
 				}
 				B += min(c1, c2);
 			}
-			printf("	(%d, %d)\n", A, B - A);	
+			printf("	(%d,%d)\n", A, B - A);	
 		}
 	}
 	return 0;
