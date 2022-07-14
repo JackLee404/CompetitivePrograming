@@ -189,9 +189,9 @@ int main(){
 			n = md * 10;
 		}
 		printf("%d/%d = ", tn, tm);
+		res.push_back(n / m);
 		if (res.size() - b[md] > 50) flag = true;
 		if (!md){
-			res.push_back(n / m);
 			for (int i = 0; i < res.size(); i ++){
 				printf("%d", res[i]);
 				if (i == 0) printf(".");
