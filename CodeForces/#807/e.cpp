@@ -1,3 +1,6 @@
+/*
+	I've knwo the way to solve the question, but did not know how to use segement tree to find most right 1 or 0, so the question will be wait to be solved until I learn segement tree all.
+*/
 #include <bits/stdc++.h>
 #define rep(i, j, k) for (int i = j; i <= k; i ++)
 #define per(i, j, k) for (int i = j; i >= k; i --)
@@ -40,19 +43,32 @@ void update(int p, int l, int r, int k){
 	if (r > m) update(rc, l, r, k);
 	pushup(p);
 }
-// int query(int p, int l, int r, int k){
-// 	if (t == k && r == k){
-// 		return tr[l].n;
-// 	}
-// 	int m = l + r >> 1;
-// 	if (k <= m) query(lc, l, m, k);
-// 	if (k > m) query(rc, m + 1, r, k);
-// }
+int query(int p, int l, int r, int k){
+	if (tr[p].l == k && tr[p].r == k){
+		return tr[p].n;
+	}
+	int m = l + r >> 1;
+	if (k <= m) query(lc, l, m, k);
+	if (k > m) query(rc, m + 1, r, k);
+}
+void out1(int p, int l, int r){
+	if (l == r){
+		cout << tr[p].l << " ";
+		return;
+	}
+	int m = l + r >> 1;
+	if (tr[lc].n) out1(lc, l, m);
+	if (tr[rc].n) out1(rc, m + 1, r);
+}
+int mostright(int p, int l, int r){
+	if (tr[p].n){
+		if (tr[p].l >= l && tr[p].r)
+	}
+}
 void solve(){
-	const int ed1 = 200000;
-	bitset<N> w;
 	int n, q;
-	cin >> n;
+	const int ed1 = 200000;
+	cin >> n >> q;
 	rep (i, 1, n){
 		cin >> a[i];
 		cnt[a[i]] ++;
@@ -64,21 +80,10 @@ void solve(){
 	while (q --){
 		int k, l;
 		cin >> k >> l;
-		if (tr[a[k]].n){
-			update(1, a[k], a[k], -1);
-		} else {
-			int t = a[k];
-			int nt = lower_bound(a + 1 + k, a + 1 + ed1, 1) - (a + 1);
-			update(1, k, nt - 1, 1);
-			update(1, a[nt], a[nt], -1);
-		}
-		if (!tr[l].n) update(1, l, l, 1);
-		else {
-			int t = a[k];
-			int nt = lower_bound(1, a + 1 + l, a + 1 + ed1, 0) - (a + 1);
-			update(1, k, nt - 1, -1);
-			update(1, a[nt], a[nt], 1);	
-		}
+		int qk = query(1, 1, ed1, a[k]);
+		if(qk) update(1, a[k], a[k], -1);
+		else update(1, a[k], mright(1, ed1, a[k]))
+
 	}
 }
 
