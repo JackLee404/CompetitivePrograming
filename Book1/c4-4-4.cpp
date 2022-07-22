@@ -44,3 +44,33 @@ int main(){
 	}
 	return 0;
 }
+
+/*  a neat code found in vjudge
+    and learn the scanf in https://qa.1r1g.com/sf/ask/3897045141/
+*/
+#include <bits/stdc++.h>
+using namespace std;
+char HEAD[1<<9];
+int deBin(int len){
+    int res=0;
+    while(len){
+        char ch=getchar();
+        while(ch!='0'&&ch!='1') ch=getchar();
+        res+=(1<<(--len))*(ch-'0');
+    }
+    return res;
+}
+char deCode(int len, int code){
+    return HEAD[(1<<len)-len-1+code];
+}
+int main(){
+    while(~scanf("%[^\n]%*c", HEAD)){
+        for (int len=deBin(3); len; len=deBin(3))
+            for (int code=deBin(len); code!=(1<<len)-1; code=deBin(len))
+                putchar(deCode(len, code));
+        putchar('\n');
+        getchar();
+        memset(HEAD, 0, sizeof(HEAD));
+    }
+    return 0;
+}
