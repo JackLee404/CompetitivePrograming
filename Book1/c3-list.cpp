@@ -108,6 +108,39 @@ int main(){
 	}
 }
 
+// 3-4
+#include <iostream>
+
+using namespace std;
+
+void solve(){
+	int ans = 1;
+	string a;
+	cin >> a;
+	int i = 0, j = a.size() - 1;
+	for (int len = 1; len <= a.size(); len ++){
+		bool flag = true;
+		if (a.size() % len == 0){
+			for (int i = 0; i < a.size(); i += len){
+				if (a.substr(0, len) != a.substr(i, len)) flag = false;
+			}
+			if (flag) {
+				ans = len;
+				break;
+			}
+		}
+	}
+	cout << ans << "\n\n";
+}
+
+int main(){
+	int _;
+	cin >> _;
+	while (_ --){
+		solve();
+	}
+}
+
 // 3-7
 #include <iostream>
 #include <cctype>
@@ -165,6 +198,7 @@ int main(){
 		printf("%d\n", ansn);
 	}
 }
+
 //3-8
 #include <iostream>
 #include <cctype>
