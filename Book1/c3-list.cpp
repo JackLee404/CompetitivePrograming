@@ -345,3 +345,21 @@ int main(){
 		printf("   %d = number of digits in repeating cycle\n\n", cnt);
 	}
 }
+
+// 3-9
+#include <iostream>
+
+using namespace std;
+
+int main(){
+	string s, t;
+	int tag;
+	while (cin >> t >> s){
+		tag = 0;
+		for (int i = 0; i < s.size(); i ++){
+			if (tag < t.size() && s[i] == t[tag]) tag ++;
+		}
+		if (tag == (int)t.size()) cout << "Yes" << endl;
+		else cout << "No" << endl;
+	}
+}
