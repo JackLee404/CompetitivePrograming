@@ -21,8 +21,8 @@ int main(){
 	}
 	return 0;	
 }
-// 3-2
 
+// 3-2
 #include <iostream>
 #include <cctype>
 using namespace std;
