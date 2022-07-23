@@ -141,6 +141,95 @@ int main(){
 	}
 }
 
+// 3-5
+#include <iostream>
+#include <cstring>
+#define LOCAL
+using namespace std;
+char a[10][10], b[10][10], act[10000];
+
+bool go_legal(int x, int y){
+	if (x < 5 && x >= 0 && y < 5 && y >= 0) return true;
+	return false;
+}
+
+char readchar(){
+	char ch;
+	while (ch = getchar())
+	if (ch != '\n' && ch != '\r') return ch;
+}
+
+void printcode(){
+	for (int i = 0; i < 5; i ++){
+		for (int j = 0; j < 5; j ++){
+			printf("%c", a[i][j]);
+			if (j != 4) printf(" ");
+		}
+		puts("");
+	}
+}
+
+bool find_space(int &x, int &y){
+	// printcode();
+	bool ask = false;
+	for (int i = 0; i < 5; i ++)
+		for (int j = 0; j < 5; j ++)
+			if (a[i][j] == '\0' || a[i][j] == ' ') x = i, y = j, ask = true;
+	if (!ask) return 0;
+	else return 1;
+}
+
+int solve(int num){
+	memset(act, 0, sizeof(act));
+	memset(a, 0, sizeof(a));
+	int x, y;
+	for (int i = 0; i < 5; i ++){
+		bool eat = true;
+		for (int j = 0; j < 5; j ++){
+			if (scanf("%c", &a[i][j]) == EOF) return 0;
+			if (a[i][j] == '\0' || a[i][j] == '\r' || a[i][j] == '\n') a[i][j] = ' ', eat = false;
+ 		}
+ 		if (eat)
+		getchar();
+	}
+	if (!find_space(x, y)) return 1;
+	else printf("Puzzle #%d:\n", num);
+	for (int i = 0;; i ++){
+		act[i] = readchar();
+		if (act[i] == '0') break;
+	}
+	getchar();
+	// cout << x << " " << y << endl;
+	// puts(act);
+	for (int i = 0; act[i] != '0'; i ++){
+		int kx = 0, ky = 0;
+		if (act[i] == 'A') kx --;
+		else if (act[i] == 'B') kx ++;
+		else if (act[i] == 'L') ky --;
+		else if (act[i] == 'R') ky ++;
+		if (!go_legal(x + kx, y + ky)){
+			puts("This puzzle has no final configuration.");
+			puts("");
+			return 1;
+		}
+		swap(a[x][y], a[x + kx][y + ky]);
+		x += kx, y += ky;
+	}
+	printcode();
+	puts("");
+	return 1;
+}
+
+int main(){
+	#ifdef LOCAL
+		freopen("data.in", "r", stdin);
+		freopen("data.out", "w", stdout);
+	#endif
+	int k = 0;
+	while (solve(++ k)){
+	}
+}
+
 // 3-7
 #include <iostream>
 #include <cctype>
