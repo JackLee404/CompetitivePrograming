@@ -25,27 +25,34 @@ int main(){
 
 #include <iostream>
 #include <cctype>
-#include <cstring>
 using namespace std;
-
-const int maxn = 1010;
+double mp[256];
+void solve(){
+	int k;
+	double sum = 0;
+	string a;
+	cin >> a;
+	for (int i = 0; i < (int)a.size(); i ++){
+		if (isdigit(a[i])) continue;
+		if (i + 1 < (int)a.size() && isdigit(a[i + 1])){
+			int j = i + 1;
+			k = 0;
+			while (j < (int)a.size() && isdigit(a[j])){
+				k = k * 10 + a[j ++] - '0';
+			}
+		}
+		else k = 1;
+		sum += k * mp[a[i]];
+	}
+	printf("%.3f\n", sum);
+}
 
 int main(){
-	int T;
-	char a[maxn];
-	scanf ("%d", &T);
-	double crt[26];
-	crt['C' - 'A'] = 12.01, crt['H' - 'A'] = 1.008, crt['O' - 'A'] = 16.00, crt['N' - 'A'] = 14.01; 
-	while (T --){
-		double ans = 0;
-		scanf ("%s", a);
-		int n = strlen(a);
-		for (int i = 0; i < n; i ++){
-			if (isdigit(a[i])) continue;
-			if (isdigit(a[i + 1])) ans += crt[a[i] - 'A'] * (a[i + 1] - '0');
-			else ans += crt[a[i] - 'A'];
-		}
-		printf("%.3lfg/mol\n", ans);
+	mp['C'] = 12.01, mp['H'] = 1.008, mp['O'] = 16.00, mp['N'] = 14.01;
+	int _;
+	cin >> _;
+	while (_--){
+		solve();
 	}
 }
 
