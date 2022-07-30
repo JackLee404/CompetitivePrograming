@@ -186,3 +186,139 @@ int main(){
         }
         return 0;
 }
+
+\\ new code
+
+#include <bits/stdc++.h>
+
+#define F(i, j, k) for(int i = j; i <= k; ++ i)
+using namespace std;
+
+const int N = 500;
+const string text[8] = {"Chinese", "Mathematics", "English", "Programming", "Overall:", "Please enter the SID, CID, name and four scores. Enter 0 to finish.", "Please enter SID or name. Enter 0 to finish."};
+
+int tot, total_ave[N];
+
+struct node{
+	string sid, cid, name;
+	int score[4], sum = 0, rank = 0;
+	double ave = 0.0;
+	bool exist = false;
+}a[N], b[N];
+
+void print_menu(){
+	cout << "Welcome to Student Performance Management System (SPMS).\n\n1 - Add\n2 - Remove\n3 - Query\n4 - Show ranking\n5 - Show Statistics\n0 - Exit\n" << endl;
+}
+
+bool cmp(node a, node b){
+	if (!a.exist || !b.exist){
+		return a.exist > b.exist;
+	}
+	else{
+		return a.sum > b.sum;
+	}
+}
+
+void calc_rank(){
+	memcpy(b, a, sizeof(a));
+	sort(b, b + tot, cmp);
+	int num = 0, last = 0;
+	F(i, 0, tot){
+		if (b[i].exist == false) continue;
+		if (b[i].sum != b[last].sum) last = i, num ++;
+		b[i].rank = num;
+	}
+}
+
+void out_put(int i){
+	calc_rank();
+	cout << b[i].sid << " " << b[i].cid << " " << b[i].name;
+	F(j, 0, 3) cout << " " << b[i].score[j] << " " << b[i].sum;
+	printf(" %.2lf\n", b[i].ave);
+}
+
+bool inputs(int i){
+	cin >> a[i].sid;
+	if (a[i].sid == "0") return false;
+	cin >> a[i].cid >> a[i].name;
+	F(j, 0, 3) cin >> a[i].score[j], a[i].sum += a[i].score[j];
+	if (a[i].sum > 0) a[i].ave = a[i].sum / 4.0;
+	a[i].exist = true;
+	return true;
+}
+
+bool check_out(string sid){
+	F(i, 0, tot - 1){
+		if (a[i].exist == true && a[i].sid == sid) return true;
+	}
+	return false;
+}
+
+void add_fuc(){
+	while(true){
+		cout << text[6] << endl;
+		if (inputs(tot) == false){
+			tot --;
+			break;
+		}
+		if (check_out(a[tot].sid)) tot --, cout << "Duplicated SID." << endl;
+		tot ++;
+	}
+}
+
+void remove_fuc(){
+	int cnt;
+	while(true){
+		cout << text[7] << endl;
+		cnt = 0;
+		string t;
+		cin >> t;
+		if (t == "0") break;
+		F(i, 0, tot){
+			if (isupper(t[0]) && a[i].exist && a[i].name == t) a[i].exist = false, cnt ++;
+			else if (a[i].exist && a[i].name == t) a[i].exist = false, cnt ++;
+		}
+		printf("%d student(s) removed.\n", cnt);
+	}
+}
+
+void query_fuc(){
+	while (true){
+		cout << text[7] << endl;
+		string t;
+		cin >> t;
+		if (t == "0") break;
+		F(i, 0, tot){
+			if (isupper(t[0]) && a[i].exist && a[i].name == t) out_put(i);
+			else if(a[i].exist && a[i].sid == t) out_put(i);
+		}
+	}
+}
+
+void show_fuc(){
+	double ave[4];
+	int tot[4], tot2;
+	F(i, 0, 3)  tot[i] = 0, ave[i] = 0;
+	F(i, 0, tot){
+		if (a[i].exist == false) continue;
+		F(j, 0, 3){
+			ave[j] += a[i].score[j];
+			if (a[i].score[j] >= 60) tot[j] ++;
+		}
+	}
+}
+
+
+int main(){
+	for (;;){
+		print_menu();
+		int n;
+		cin >> n;
+		if (!n) break;
+		if (n == 1) add_fuc();
+		else if(n == 2) remove_fuc();
+		else if(n == 3) query_fuc();
+		else if(n == 4) cout << "Showing the ranklist hurts students’ self-esteem. Don’t do that." << endl;
+		else if(n == 5) show_func();
+	}
+}
