@@ -1,0 +1,35 @@
+{
+	"folders":
+	[
+		{
+			"path": "D:\\Repository\\Contest\\CompetitivePrograming\\HBCPC\\Training14",
+		}
+	],
+	"debugger_configurations":
+	[
+		{
+			"type": "gdb",
+			"request": "launch",
+			"name": "Launch Program",
+			"target": "./bin/executable",
+			"cwd": "${folder}",
+			"valuesFormatting": "parseText"
+		},
+		{
+			"type": "lldb",
+			"request": "launch",
+			"name": "Launch",
+			"program": "${folder}/${file_base_name}.exe",
+			"args": [],
+			"cwd": "${folder}"
+		},
+		{
+			"type": "lldb",
+			"request": "launch",
+			"name": "Launch",
+			"program": "${folder}/${file_base_name}.exe",
+			"args": [],
+			"cwd": "${folder}"
+		},
+	],
+}

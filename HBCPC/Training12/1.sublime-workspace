@@ -1,0 +1,551 @@
+{
+	"auto_complete":
+	{
+		"selected_items":
+		[
+			[
+				"ch",
+				"change_value"
+			],
+			[
+				"N",
+				"enum"
+			],
+			[
+				"be",
+				"beginend"
+			],
+			[
+				"file",
+				"files_name"
+			],
+			[
+				"fi",
+				"file_handle_tmp"
+			],
+			[
+				"un",
+				"unordered_map"
+			],
+			[
+				"bt_",
+				"bt_insert"
+			],
+			[
+				"beg",
+				"beginend"
+			],
+			[
+				"uno",
+				"unordered_map"
+			],
+			[
+				"unorder",
+				"unordered_map"
+			]
+		]
+	},
+	"buffers":
+	[
+	],
+	"build_system": "",
+	"build_system_choices":
+	[
+		[
+			[
+				[
+					"Packages/C++/C++ Single File.sublime-build",
+					""
+				],
+				[
+					"Packages/C++/C++ Single File.sublime-build",
+					"Run"
+				]
+			],
+			[
+				"Packages/C++/C++ Single File.sublime-build",
+				"Run"
+			]
+		],
+		[
+			[
+				[
+					"Packages/User/acm.sublime-build",
+					""
+				],
+				[
+					"Packages/User/acm.sublime-build",
+					"C++_Run"
+				],
+				[
+					"Packages/User/acm.sublime-build",
+					"C++_RunInCommand"
+				]
+			],
+			[
+				"Packages/User/acm.sublime-build",
+				"C++_RunInCommand"
+			]
+		],
+		[
+			[
+				[
+					"Packages/User/acm.sublime-build",
+					""
+				],
+				[
+					"Packages/User/acm.sublime-build",
+					"Run"
+				]
+			],
+			[
+				"Packages/User/acm.sublime-build",
+				"Run"
+			]
+		],
+		[
+			[
+				[
+					"Packages/User/g++.sublime-build",
+					""
+				],
+				[
+					"Packages/User/g++.sublime-build",
+					"C++_Run"
+				],
+				[
+					"Packages/User/g++.sublime-build",
+					"C++_RunInCommand"
+				]
+			],
+			[
+				"Packages/User/g++.sublime-build",
+				"C++_RunInCommand"
+			]
+		]
+	],
+	"build_varint": "",
+	"command_palette":
+	{
+		"height": 0.0,
+		"last_filter": "",
+		"selected_items":
+		[
+			[
+				"package control",
+				"Package Control: Install Package"
+			],
+			[
+				"",
+				":$ - EOF"
+			],
+			[
+				"pcip",
+				"Package Control: Install Package"
+			],
+			[
+				"view in broswer",
+				"View In Browser"
+			],
+			[
+				"view",
+				"View In Browser"
+			],
+			[
+				"Package Control: ",
+				"Package Control: Install Package"
+			],
+			[
+				":",
+				":$ - EOF"
+			],
+			[
+				"Language",
+				"LSP: Disable Language Server Globally"
+			],
+			[
+				"LSP",
+				"LSP: Enable Language Server Globally"
+			],
+			[
+				":4",
+				"Set Syntax: camlp4"
+			],
+			[
+				"package",
+				"Package Control: Remove Package"
+			],
+			[
+				"pack",
+				"Package Control: Remove Channel"
+			],
+			[
+				"theme",
+				"UI: Select Color Scheme"
+			],
+			[
+				"pa",
+				"Package Control: Install Package"
+			],
+			[
+				"package install",
+				"Package Control: Install Package"
+			],
+			[
+				"font",
+				"FastOlympicCoding: Submit"
+			],
+			[
+				"plugin",
+				"LSP: Enable Language Server in Project"
+			],
+			[
+				"install",
+				"Package Control: Install Package"
+			],
+			[
+				"convert to",
+				"ConvertToUTF8: Reload with Encoding"
+			],
+			[
+				"packge install",
+				"Package Control: Install Package"
+			],
+			[
+				"run",
+				"Build With: acm - Run"
+			],
+			[
+				"Oly",
+				"FastOlympicCoding: Open Settings"
+			],
+			[
+				"key",
+				"Preferences: Key Bindings"
+			],
+			[
+				"SET COLOR",
+				"UI: Select Color Scheme"
+			]
+		],
+		"width": 0.0
+	},
+	"console":
+	{
+		"height": 0.0,
+		"history":
+		[
+		]
+	},
+	"distraction_free":
+	{
+		"menu_visible": true,
+		"show_minimap": false,
+		"show_open_files": false,
+		"show_tabs": false,
+		"side_bar_visible": false,
+		"status_bar_visible": false
+	},
+	"expanded_folders":
+	[
+		"/D/Repository/Contest/CompetitivePrograming/HBCPC/Training14"
+	],
+	"file_history":
+	[
+		"/C/Users/Lee/Desktop/a.cpp",
+		"/D/Repository/Contest/CompetitivePrograming/HBCPC/Training12/a.cpp",
+		"/D/Repository/Contest/CompetitivePrograming/HBCPC/Training12/1.sublime-project",
+		"/D/Repository/Contest/CompetitivePrograming/HBCPC/Training13/a.cpp",
+		"/D/Repository/Contest/CompetitivePrograming/HBCPC/Training12/b.cpp",
+		"/D/Repository/Contest/CompetitivePrograming/Atcoder/abc_278/b.cpp",
+		"/D/Repository/Contest/CompetitivePrograming/Atcoder/abc_278/c.cpp",
+		"/D/Repository/Contest/CompetitivePrograming/Atcoder/abc_278/d.cpp",
+		"/D/Repository/Contest/CompetitivePrograming/HBCPC/Training14/c.cpp",
+		"/D/Repository/Contest/CompetitivePrograming/HBCPC/Training14/b.cpp",
+		"/D/Repository/Contest/CompetitivePrograming/HBCPC/Training14/a.cpp",
+		"/D/Repository/Contest/CompetitivePrograming/HBCPC/Training14/d.cpp",
+		"/D/Repository/Contest/CompetitivePrograming/HBCPC/Training13/c.cpp",
+		"/D/Repository/Contest/CompetitivePrograming/HBCPC/Training13/b.cpp",
+		"/C/Users/Lee/AppData/Roaming/Sublime Text/Packages/Debugger/debugger.sublime-settings",
+		"/C/Users/Lee/AppData/Roaming/Sublime Text/Packages/User/debugger.sublime-settings",
+		"/D/Repository/Contest/CompetitivePrograming/HBCPC/Training13/1.sublime-project",
+		"/D/Repository/Contest/CompetitivePrograming/HBCPC/Training11/a.cpp",
+		"/D/Repository/Contest/CompetitivePrograming/HBCPC/Training11/b.cpp",
+		"/D/Repository/Contest/CompetitivePrograming/HBCPC/Training11/c.cpp",
+		"/D/Repository/Contest/CompetitivePrograming/HBCPC/Training10/c.cpp",
+		"/D/Repository/Contest/CompetitivePrograming/HBCPC/Training10/a.cpp",
+		"/D/Repository/Contest/CompetitivePrograming/HBCPC/Training10/d.cpp",
+		"/D/Repository/Contest/CompetitivePrograming/HBCPC/Training9/at_c.cpp",
+		"/D/Repository/Contest/CompetitivePrograming/HBCPC/Training9/at_b.cpp",
+		"/D/Repository/Contest/CompetitivePrograming/HBCPC/Training9/a.cpp",
+		"/D/Repository/Contest/CompetitivePrograming/HBCPC/Training9/at_a.cpp",
+		"/D/Repository/Contest/CompetitivePrograming/HBCPC/Training9/b.cpp",
+		"/D/Repository/Contest/CompetitivePrograming/HBCPC/Training9/c.cpp",
+		"/D/Repository/Contest/CompetitivePrograming/HBCPC/Training7-newcoder/d.cpp",
+		"/D/Repository/Contest/CompetitivePrograming/HBCPC/Training6/Fliptile.cpp",
+		"/D/Repository/Contest/CompetitivePrograming/HBCPC/Training6/Find_The_Multiple.cpp",
+		"/D/Repository/Contest/CompetitivePrograming/HBCPC/Training6/Prime_Path.cpp",
+		"/C/Users/Lee/AppData/Roaming/Sublime Text/Packages/CTags/CTags.sublime-settings",
+		"/D/Repository/Contest/CompetitivePrograming/HBCPC/Training5-lanqiao/h.cpp",
+		"/D/Repository/Contest/CompetitivePrograming/HBCPC/Training5-lanqiao/g.cpp",
+		"/C/Users/Lee/AppData/Roaming/Sublime Text/Packages/FileBrowser/Default (Windows).sublime-keymap",
+		"/D/Repository/Contest/CompetitivePrograming/HBCPC/Training5-lanqiao/c.cpp",
+		"/D/Repository/Contest/CompetitivePrograming/HBCPC/Training5-lanqiao/b.cpp",
+		"/D/Repository/Contest/CompetitivePrograming/Atcoder/abc_276/b.cpp",
+		"/D/Repository/Contest/CompetitivePrograming/HBCPC/Training6/POJ-1753.cpp",
+		"/D/Repository/Contest/CompetitivePrograming/HBCPC/Training5-lanqiao/a.cpp",
+		"/D/Repository/Contest/CompetitivePrograming/HBCPC/Training5-lanqiao/f.cpp",
+		"/D/Repository/Contest/CompetitivePrograming/HBCPC/Training5-lanqiao/e.cpp",
+		"/D/Repository/Contest/CompetitivePrograming/HBCPC/Training5-lanqiao/d.cpp",
+		"/D/Repository/Contest/CompetitivePrograming/HBCPC/Training4/test3.cpp",
+		"/D/Repository/Contest/CompetitivePrograming/HBCPC/Training4/D - Dungeon Master.cpp",
+		"/D/Repository/Contest/CompetitivePrograming/HBCPC/Training4/test.cpp",
+		"/D/Repository/Contest/CompetitivePrograming/HBCPC/Training4/c.cpp",
+		"/D/Repository/Contest/CompetitivePrograming/Atcoder/abc_275/c.cpp",
+		"/D/Repository/Contest/CompetitivePrograming/Atcoder/abc_275/a.cpp",
+		"/D/Repository/Contest/CompetitivePrograming/CodeForces/#831/b.cpp",
+		"/D/Repository/Contest/CompetitivePrograming/CodeForces/#831/f.cpp",
+		"/D/Repository/Contest/CompetitivePrograming/CodeForces/#831/e.cpp",
+		"/D/Repository/Contest/CompetitivePrograming/CodeForces/#831/c.cpp",
+		"/D/Repository/Contest/CompetitivePrograming/CodeForces/#831/a.cpp",
+		"/C/Users/Lee/Desktop/NBteam/a.cpp",
+		"/C/Users/Lee/Desktop/NBteam/pc3.cpp",
+		"/C/Users/Lee/Desktop/NBteam/f.cpp",
+		"/C/Users/Lee/Desktop/NBteam/kuaizi.cpp",
+		"/C/Users/Lee/Desktop/NBteam/ac.cpp",
+		"/C/Users/Lee/Desktop/NBteam/b.cpp",
+		"/C/Users/Lee/Desktop/NBteam/re.cpp",
+		"/D/Contest temp/a.cpp",
+		"/C/Users/Lee/Desktop/c.cpp",
+		"/D/Repository/Contest/CompetitivePrograming/HBCPC/Training3/a.cpp",
+		"/C/Users/Lee/6.cpp",
+		"/C/Users/Lee/qiyi.cpp",
+		"/C/Users/Lee/b.cpp",
+		"/C/Users/Lee/l.cpp",
+		"/C/Users/Lee/e.cpp",
+		"/C/Users/Lee/Downloads/MaxArrayDeque.class",
+		"/C/Users/Lee/Desktop/hw/solution.py",
+		"/C/Users/Lee/AppData/Local/nvim/init.vim",
+		"/C/Users/Lee/Desktop/Mobile_Phone/src/MainProgram/Shop.java",
+		"/C/Users/Lee/Desktop/Mobile_Phone/bin/MainProgram/MainProgram.class",
+		"/C/Users/Lee/Desktop/Mobile_Phone/bin/MainProgram/Shop.class",
+		"/C/Users/Lee/AppData/Local/nvim/plug.vim",
+		"/C/Users/Lee/.config/nvim/init.vim",
+		"/C/Users/Lee/Downloads/b.cpp",
+		"/C/Users/Lee/Downloads/a.cpp",
+		"/C/Users/Lee/AppData/Roaming/Sublime Text/Packages/VimModelines/VimModelines.sublime-settings",
+		"/C/Users/Lee/Downloads/a.py",
+		"/C/Users/Lee/Downloads/vimrc",
+		"/C/Users/Lee/.vrapperrc",
+		"/C/Users/Lee/.ideavimrc",
+		"/C/Users/Lee/Desktop/data.out",
+		"/C/Users/Lee/Desktop/data.in",
+		"/C/Users/Lee/Desktop/Rbot/e.cpp",
+		"/C/Users/Lee/Desktop/Rbot/data.out",
+		"/C/Users/Lee/Desktop/Rbot/data.in",
+		"/C/Users/Lee/Desktop/Rbot/a.cpp",
+		"/C/Users/Lee/Desktop/Rbot/c.cpp",
+		"/C/Users/Lee/Desktop/Rbot/l.cpp",
+		"/C/Users/Lee/Desktop/Rbot/y.cpp",
+		"/C/Program Files/Vim/_vimrc",
+		"/C/Program",
+		"/C/Program Files/Vim/vim90/vimrc_example.vim",
+		"/C/Users/Lee/Desktop/Rbot/f.cpp",
+		"/C/Users/Lee/Desktop/Rbot/b.cpp",
+		"/C/Users/Lee/Desktop/GPLT/b.cpp",
+		"/D/Program/Sublime Text/a.cpp",
+		"/C/Users/Lee/Desktop/GPLT/a.cpp",
+		"/C/Users/Lee/Downloads/P1462_13.in",
+		"/C/Users/Lee/Downloads/P1462_13.out",
+		"/C/Users/Lee/Downloads/P1144_4.in",
+		"/C/Users/Lee/Downloads/P1038_1.in",
+		"/C/Users/Lee/Desktop/hello_world.cpp",
+		"/C/Users/Lee/Desktop/GPLT/4",
+		"/D/Program/Sublime Text/tree.c",
+		"/C/Users/Lee/Desktop/GPLT/task.cpp",
+		"/C/Users/Lee/Desktop/GPLT/e.cpp",
+		"/C/Users/Lee/Desktop/GPLT/py.py",
+		"/C/Users/Lee/Desktop/py.py",
+		"/C/Windows/System32/drivers/etc/hosts",
+		"/C/Users/Lee/Desktop/GPLT/c.cpp",
+		"/C/Users/Lee/Desktop/GPLT/4  2",
+		"/C/Users/Lee/Desktop/GPLT/work3.cpp",
+		"/C/Users/Lee/Desktop/GPLT/未命名2.cpp",
+		"/C/Users/Lee/Desktop/GPLT/test2.cpp",
+		"/C/Users/Lee/Desktop/GPLT/f.cpp",
+		"/C/Users/Lee/Desktop/GPLT/work1.cpp",
+		"/C/Users/Lee/Desktop/GPLT/b.exe",
+		"/D/Program/Sublime Text/b.cpp",
+		"/C/Users/Lee/Desktop/GPLT/test.cpp",
+		"/C/Users/Lee/Desktop/GPLT/5.cpp",
+		"/C/Users/Lee/Desktop/hexo+typora+github图片路径问题 - 简书.html",
+		"/C/Users/Lee/Desktop/GPLT/asd.cpp"
+	],
+	"find":
+	{
+		"height": 32.0
+	},
+	"find_in_files":
+	{
+		"height": 116.0,
+		"where_history":
+		[
+		]
+	},
+	"find_state":
+	{
+		"case_sensitive": false,
+		"find_history":
+		[
+			"}"
+		],
+		"highlight": true,
+		"in_selection": false,
+		"preserve_case": false,
+		"regex": false,
+		"replace_history":
+		[
+		],
+		"reverse": false,
+		"scrollbar_highlights": true,
+		"show_context": true,
+		"use_buffer2": true,
+		"use_gitignore": true,
+		"whole_word": false,
+		"wrap": true
+	},
+	"groups":
+	[
+		{
+			"sheets":
+			[
+			]
+		},
+		{
+			"sheets":
+			[
+			]
+		}
+	],
+	"incremental_find":
+	{
+		"height": 32.0
+	},
+	"input":
+	{
+		"height": 51.3333333333
+	},
+	"layout":
+	{
+		"cells":
+		[
+			[
+				0,
+				0,
+				1,
+				1
+			],
+			[
+				1,
+				0,
+				2,
+				1
+			]
+		],
+		"cols":
+		[
+			0.0,
+			0.68,
+			1.0
+		],
+		"rows":
+		[
+			0.0,
+			1.0
+		]
+	},
+	"menu_visible": true,
+	"output.Debugger":
+	{
+		"height": 415.333333333
+	},
+	"output.Debugger Console":
+	{
+		"height": 472.0
+	},
+	"output.LSP Log Panel":
+	{
+		"height": 0.0
+	},
+	"output.diagnostics":
+	{
+		"height": 0.0
+	},
+	"output.exec":
+	{
+		"height": 197.0
+	},
+	"output.find_results":
+	{
+		"height": 0.0
+	},
+	"output.language servers":
+	{
+		"height": 0.0
+	},
+	"output.mdpopups":
+	{
+		"height": 0.0
+	},
+	"output.mdpopups-dummy":
+	{
+		"height": 0.0
+	},
+	"pinned_build_system": "Packages/User/acm.sublime-build",
+	"project": "1.sublime-project",
+	"replace":
+	{
+		"height": 60.0
+	},
+	"save_all_on_build": true,
+	"select_file":
+	{
+		"height": 0.0,
+		"last_filter": "",
+		"selected_items":
+		[
+		],
+		"width": 0.0
+	},
+	"select_project":
+	{
+		"height": 0.0,
+		"last_filter": "",
+		"selected_items":
+		[
+		],
+		"width": 0.0
+	},
+	"select_symbol":
+	{
+		"height": 0.0,
+		"last_filter": "",
+		"selected_items":
+		[
+		],
+		"width": 0.0
+	},
+	"selected_group": 0,
+	"settings":
+	{
+	},
+	"show_minimap": true,
+	"show_open_files": true,
+	"show_tabs": true,
+	"side_bar_visible": false,
+	"side_bar_width": 157.0,
+	"status_bar_visible": true,
+	"template_settings":
+	{
+	}
+}
